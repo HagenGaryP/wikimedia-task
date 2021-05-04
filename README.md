@@ -50,7 +50,7 @@ https://dev.mysql.com/doc/refman/8.0/en/database-use.html
 ## Running Locally
 
 ```bash
-npm run start-dev
+npm run start
 ```
 
 (localhost:8080)
