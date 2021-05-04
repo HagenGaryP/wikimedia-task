@@ -1,5 +1,5 @@
 {
-  "name": "wmf-tech-task",
+  "name": "wikimedia-task",
   "version": "1.0.0",
   "description": "Technical interview task - an app to collect and store info from prospective donors.",
   "main": "index.js",
@@ -9,10 +9,6 @@
   },
   "author": "Gary Hagen",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HagenGaryP/WMF-Tech-Task/issues"
-  },
-  "homepage": "https://github.com/HagenGaryP/WMF-Tech-Task#readme",
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0",
