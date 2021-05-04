@@ -40,10 +40,34 @@ npm install
 Database can be created through the MySQL Workbench, within the JS, or through the CLI.
 Either create this exact DB or change the name in the package.json
 ```bash
-mysql CREATE DATABASE wikimedia-task
+mysql CREATE DATABASE wikimedia_donation
 ```
 https://dev.mysql.com/doc/refman/8.0/en/database-use.html
 
+## Create Table in database
+This can also be done with the MySQL Workbench, inside the JS itself, or through the CLI with the following:
+```bash
+CREATE TABLE `wikimedia_donation`.`donations` (
+  `donationId` INT NOT NULL AUTO_INCREMENT,
+  `userId` INT NOT NULL,
+  `firstName` VARCHAR(50) NULL,
+  `lastName` VARCHAR(50) NULL,
+  `streetAddress` VARCHAR(200) NULL,
+  `city` VARCHAR(50) NULL,
+  `state_region` VARCHAR(100) NULL,
+  `country` VARCHAR(100) NULL,
+  `postalCode` INT NULL,
+  `phoneNumber` INT NULL,
+  `email` VARCHAR(100) NULL,
+  `preferredContact` VARCHAR(45) NULL,
+  `preferredPayment` VARCHAR(45) NULL,
+  `donationFrequency` VARCHAR(45) NULL,
+  `donationAmount` FLOAT NULL,
+  `comments` VARCHAR(1000) NULL,
+  PRIMARY KEY (`userId`, `donationId`),
+  UNIQUE INDEX `donationId_UNIQUE` (`donationId` ASC) VISIBLE);
+```
+Keep in mind, these column names and data types can be changed, but make sure to account for that in the code.
 
 ## Running Locally
 
