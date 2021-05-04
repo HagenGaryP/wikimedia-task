@@ -5,8 +5,6 @@
 
 - No transpilers, just vanilla javascript
 - ES2017 latest features like Async/Await
-- Uses Babel as ES6-to-ES5 transpiler
-- ES2017 latest features like Async/Await
 - Uses [NPM](https://www.npmjs.com/)
 - Node.js [Express](https://expressjs.com/) server
 - Logging with [Morgan](https://github.com/expressjs/morgan)
