@@ -128,10 +128,27 @@
       const review = document.getElementById('review');
       const thank = document.getElementById('thank');
 
-      function submit() {
+      async function submit() {
         form.setAttribute('hidden', '');
         thank.removeAttribute('hidden');
 
+        form.submit = submit;
+        fetch('/donations', {
+	        method: 'POST',
+	        body: JSON.stringify(myObj),
+          headers: {
+		        'Content-type': 'application/json; charset=UTF-8'
+	        }
+        }).then(function (response) {
+          if (response.ok) {
+            return response.json();
+          }
+          return Promise.reject(response);
+        }).then(function (data) {
+          console.log(data);
+        }).catch(function (error) {
+          console.warn('Something went wrong.', error);
+        });;
       }
 
       function Form() {

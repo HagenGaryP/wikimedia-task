@@ -11,6 +11,12 @@ router.get('/', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
   // TODO: insert data into table
+  let name=req.body.firstName;
+  await mysqlConnection.query("INSERT INTO `donations` (donationId, `userId`, `firstName`, `lastName`, `streetAddress`, `city`, `state_region`, `country`, `postalCode`, `phoneNumber`, `email`, `preferredContact`, `preferredPayment`, `donationFrequency`, `donationAmount`) VALUES (?)", name.toString(), function(err, result){
+      if(err) throw err;
+          console.log("1 record inserted");
+      });
+  res.send(name);
 });
 
 module.exports = router;
