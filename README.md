@@ -3,14 +3,14 @@
 
 ## Features
 
- - No transpilers, just vanilla javascript
- - ES2017 latest features like Async/Await
+- No transpilers, just vanilla javascript
+- ES2017 latest features like Async/Await
 - Uses Babel as ES6-to-ES5 transpiler
 - ES2017 latest features like Async/Await
-- Uses [npm](https://www.npmjs.com/)
-- Node.js Express server [Express](https://expressjs.com/)
-- Logging with [morgan](https://github.com/expressjs/morgan)
-- Nodemon was used to update app automatically, without restarting the node application. [nodemon](https://www.npmjs.com/package/nodemon)
+- Uses [NPM](https://www.npmjs.com/)
+- Node.js [Express](https://expressjs.com/) server
+- Logging with [Morgan](https://github.com/expressjs/morgan)
+- Uses [Nodemon](https://www.npmjs.com/package/nodemon) to update app automatically, without restarting the node application.
 - MySQL database. [MySQL](https://dev.mysql.com/)
 
 ## Authors
